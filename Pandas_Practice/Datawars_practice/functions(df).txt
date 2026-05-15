@@ -1,0 +1,18 @@
+In pandas
+-> to understand about data frames : 
+   we need to use .info()method and.shape variable
+-> to search and know about element at particular index we use:
+   .loc[INDEX,COLOUMN_NAME]
+   it will give the exact colum u want for that index[called LOCK method]
+-> to find maximum we've two ways:
+	1. df.max()
+	2.df["Value"].max()
+-> when we need to search for a word or another coloum by using integer value we write like this:
+	df[df["Value"]==319]
+-> Pandas mein naya column banane ke liye aapko direct assignment karni hoti hai:
+	df[newColoumnname]=features
+-> to find maximum value from filtered data:
+	Aapko pehle filter karna hai aur phir us filtered data par .max() lagana hai and don't use comma 
+	ex-df[df["Ratio"]==10]["Value"].max()
+-> if we want  to check Value column mein kaunsa number sabse zyada baar aa raha hai.
+	we use df['Value'].value_counts().head()
